@@ -16,12 +16,40 @@ Please fill in the blank
 using namespace std;
 class Car {
 public:
+    
     string model;
     int year;
     string color;
 
+    // Setters
+    void set_model(string new_model) {
+        model = new_model;
+    }
 
-    void displayDetails() {
+    void set_year(int new_year) {
+        year = new_year;
+    }
+
+    void set_color(string new_color) {
+        color = new_color;
+    }
+
+    // Getters
+    string get_model() {
+        return model;
+    }
+
+    int get_year() {
+        return year;
+    }
+
+    string get_color() {
+        return color;
+    }
+
+
+
+    void display_details() {
         cout << "Model: " << model << ", Year: " << year << ", Color: " << color << std::endl;
     }
 };
@@ -33,7 +61,7 @@ int main() {
     myCar.color = "Blue";
 
 
-    myCar.displayDetails();
+    myCar.display_details();
 
     return 0;
 }
