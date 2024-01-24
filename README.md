@@ -50,7 +50,7 @@ public:
 
 
     void display_details() {
-        cout << "Model: " << model << ", Year: " << year << ", Color: " << color << std::endl;
+        cout << "Model: " << model << ", Year: " << year << ", Color: " << color << endl;
     }
 };
 
